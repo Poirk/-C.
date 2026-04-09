@@ -1,14 +1,23 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 int main(){
-	double a1,a2,a3,b1,b2,b3,c1,c2,c3;
-	printf("BBedute matrizy");
-	scanf("%lf %lf %lf %lf %lf %lf %lf %lf %lf",a1,a2,a3,b1,b2,b3,c1,c2,c3);
-	sum_glav=a1+b2+c3;
-	sum_pob=a3+b2+c1;
-	printf("summa_glav_diag",sum_glav);
-	printf("summa_pob_diag",sum_pob);
-	
-repeat(0)
-
+	double a,b,c,Perimetr=0,plowad6=0,proverka_na_pravilnost=0;
+	printf("bbedite dlini storon\n");
+	printf("a=");
+	scanf("%lf",&a);
+	printf("b=");
+	scanf("%lf",&b);
+	printf("c=");
+	scanf("%lf",&c);
+	Perimetr=a+b+c;
+	if(a+b<c,a+c<b,b+c<a){
+		printf("treygolnik_neveren");
+	}
+	else{
+		plowad6=sqrt(Perimetr*(Perimetr-a)*(Perimetr-b)*(Perimetr-c));
+		printf("perimetr=%.2lf",Perimetr);
+		printf("plowad=%.2lf",plowad6);
+		
+	}
 }
